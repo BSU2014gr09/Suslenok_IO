@@ -7,16 +7,16 @@ fflush(stdin);
 gets(a);
 }
 
-void subStr(char *s1, char *s2, int nach, int kol)
+void subStr(char *s1, char *s2, int nach, int kol)лась
 {
-char *p = s1;
+char *p = s1;// зачем введена новая переменная р? Почему не использовалась ЛОКАЛЬНАЯ s1 (см. строку 53, например)
 p = p + nach;
 strncpy(s2, p, kol); s2[kol] = 0;
 }
 
 void delStr(char *s, int nach, int kol)
 {
-char *p = s, *q;
+char *p = s, *q; // зачем введены новые переменные р,q? Почему не использовалась ЛОКАЛЬНАЯ s1 (см. строку 53, например)
 p = p + nach;
 q = p + kol;
 strcpy(p, q);
