@@ -9,14 +9,27 @@ void enter(char * a)
 	gets(a);
 }
 
-void subStr(char *s1, char *s2, int nach, int kol)
+void subStr(char *s1, char *s2, int nach, int kol)лась
 {
+<<<<<<< HEAD
 	strncpy(s2, s1 + nach, kol); s2[kol] = '\0';
+=======
+char *p = s1;// зачем введена новая переменная р? Почему не использовалась ЛОКАЛЬНАЯ s1 (см. строку 53, например)
+p = p + nach;
+strncpy(s2, p, kol); s2[kol] = 0;
+>>>>>>> 8781d64cf1091d4e9dc362be8bcb102aca4e7da2
 }
 
 void delStr(char *s, int nach, int kol)
 {
+<<<<<<< HEAD
 	strcpy(s + nach, s + nach + kol);
+=======
+char *p = s, *q; // зачем введены новые переменные р,q? Почему не использовалась ЛОКАЛЬНАЯ s1 (см. строку 53, например)
+p = p + nach;
+q = p + kol;
+strcpy(p, q);
+>>>>>>> 8781d64cf1091d4e9dc362be8bcb102aca4e7da2
 }
 
 void delWord(char* str, int maxLen)
