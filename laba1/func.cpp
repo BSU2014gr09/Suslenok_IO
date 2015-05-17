@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS
+/*#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include"func.h"
 using namespace std;
@@ -60,4 +60,4 @@ void print(char* str)
 {
 	cout << str << endl;
 }
-
+*/
