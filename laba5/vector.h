@@ -17,8 +17,8 @@ class Vector
 		void vector_print();//TODO лучше перегрузить оператор <<
 		//TODO нет операторов SET и GET
 		void normalize();
-		double dot_product(Vector);
-		Vector multiple(double);
+		double dot_product(Vector);//TODO лучше перегрузить оператор *
+		Vector multiple(double);//TODO лучше перегрузить оператор *
 		double length();
 
 };
