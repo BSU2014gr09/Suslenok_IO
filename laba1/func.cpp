@@ -60,3 +60,8 @@ void print(char* str)
 {
 	cout << str << endl;
 }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 52cf13827867827fd901d472e72a5f9f82f9f12a
