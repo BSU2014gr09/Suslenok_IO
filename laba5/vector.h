@@ -7,18 +7,15 @@ class Vector
 		double x, y;
 	public:
 	//TODO Great 4
-		Vector(double a, double b) : x(a), y(b){}	// constructor
-		Vector() :x(0), y(0){}                         // Default constructor
-		// destructor
-		// copy constructor
-		// operator=
-		
+		Vector(double a, double b) : x(a), y(b){}	
+		Vector() :x(0), y(0){}                        
+		~Vector()
+	
 		void enterVector(double, double);
-		void vector_print();//TODO лучше перегрузить оператор <<
-		//TODO нет операторов SET и GET
+		void vector_print();
 		void normalize();
-		double dot_product(Vector);//TODO лучше перегрузить оператор *
-		Vector multiple(double);//TODO лучше перегрузить оператор *
+		double dot_product(Vector);
+		Vector multiple(double);
 		double length();
 
 };
